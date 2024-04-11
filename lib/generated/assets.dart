@@ -2,7 +2,10 @@
 class Assets {
   Assets._();
 
+  static const String imagesLogo = 'assets/images/logo.png';
+  static const String imagesOnboardingDoctor = 'assets/images/onboarding_doctor.png';
+  static const String imagesSplashScreen = 'assets/images/splash_screen.png';
   static const String svgsDocLogo = 'assets/svgs/doc_logo.svg';
-  static const String svgsGroup = 'assets/svgs/doc_low_logo_opacity.svg';
+  static const String svgsDocLowLogoOpacity = 'assets/svgs/doc_low_logo_opacity.svg';
 
 }

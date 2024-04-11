@@ -16,7 +16,7 @@ class DocImageAndText extends StatelessWidget {
       child: Stack(
 
         children: [
-          SvgPicture.asset(Assets.svgsGroup, width: 360.w,),
+          SvgPicture.asset(Assets.svgsDocLogo, width: 360.w,),
           Container(
             foregroundDecoration: BoxDecoration(
               gradient: LinearGradient(
