@@ -1,4 +1,5 @@
 import 'package:docdoc_app/core/theme/styles.dart';
+import 'package:docdoc_app/generated/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -15,7 +16,7 @@ class DocImageAndText extends StatelessWidget {
       child: Stack(
 
         children: [
-          SvgPicture.asset('assets/svgs/doc_low_logo_opacity.svg', width: 360.w,),
+          SvgPicture.asset(Assets.svgsGroup, width: 360.w,),
           Container(
             foregroundDecoration: BoxDecoration(
               gradient: LinearGradient(

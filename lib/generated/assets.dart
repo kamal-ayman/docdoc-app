@@ -3,6 +3,6 @@ class Assets {
   Assets._();
 
   static const String svgsDocLogo = 'assets/svgs/doc_logo.svg';
-  static const String svgsGroup = 'assets/svgs/doc_low_logo_opacity.png';
+  static const String svgsGroup = 'assets/svgs/doc_low_logo_opacity.svg';
 
 }
