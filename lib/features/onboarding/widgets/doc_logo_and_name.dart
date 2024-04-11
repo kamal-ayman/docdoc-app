@@ -1,4 +1,5 @@
 import 'package:docdoc_app/core/theme/styles.dart';
+import 'package:docdoc_app/generated/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -11,7 +12,7 @@ class DocLogoAndName extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SvgPicture.asset('assets/svgs/doc_logo.svg'),
+        SvgPicture.asset(Assets.svgsDocLogo),
         SizedBox(width: 10.w),
         Text('Doc Doc', style: TextStyles.black24w700),
       ],
