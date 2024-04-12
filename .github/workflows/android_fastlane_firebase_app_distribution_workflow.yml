@@ -3,7 +3,7 @@ name: Android Fastlane with Firebase App with Distribution Workflow
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   distribute_to_firebase:
     runs-on: ubuntu-latest
