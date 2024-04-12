@@ -1,7 +1,6 @@
 import 'package:docdoc_app/core/helpers/extensions.dart';
 import 'package:docdoc_app/core/theme/styles.dart';
 import 'package:docdoc_app/core/widgets/custom_material_button.dart';
-import 'package:docdoc_app/features/login/ui/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -19,7 +18,7 @@ class GetStartedButton extends StatelessWidget {
       width: 300.w,
       widget: Text(
         'Get Started',
-        style: TextStyles.white16w600,
+        style: TextStyles.white16semiBold,
       ),
     );
   }

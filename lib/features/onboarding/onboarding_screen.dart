@@ -28,7 +28,7 @@ class OnBoardingScreen extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 30.w),
                   child: Text(
                     'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.',
-                    style: TextStyles.gery11w400,
+                    style: TextStyles.gery11regular,
                     textAlign: TextAlign.center,
                   ),
                 ),
