@@ -1,7 +1,7 @@
-import 'package:docdoc_app/core/helpers/extensions.dart';
 import 'package:flutter/material.dart';
 
 import '../theme/light_colors.dart';
+import '../theme/styles.dart';
 
 class CustomMaterialButton extends StatelessWidget {
   final Color buttonColor;
@@ -14,6 +14,7 @@ class CustomMaterialButton extends StatelessWidget {
   final double width;
   final double height;
   final String? text;
+  final TextStyle? textStyle;
   final Widget? widget;
   final bool isLoading;
   final void Function()? onTap;
@@ -33,6 +34,7 @@ class CustomMaterialButton extends StatelessWidget {
     this.width = double.maxFinite,
     this.height = 52,
     this.text,
+    this.textStyle,
     this.widget,
     this.isLoading = false,
     required this.onTap,
@@ -64,12 +66,7 @@ class CustomMaterialButton extends StatelessWidget {
                 offset: const Offset(0, 0),
                 child: widget ??
                     Text(text!,
-                        style: context.textTheme.titleMedium!.copyWith(
-                            color: textColor ?? LightColors.primary,
-                            fontSize: fontSize,
-                            fontWeight: isBoldText
-                                ? FontWeight.bold
-                                : FontWeight.w500)),
+                        style: textStyle ?? TextStyles.white16semiBold),
               ))
             : const Center(child: CircularProgressIndicator()),
       ),

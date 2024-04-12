@@ -11,40 +11,36 @@ class DocImageAndText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      // height: 550.h,
-      child: Stack(
-
-        children: [
-          SvgPicture.asset(Assets.svgsDocLogo, width: 360.w,),
-          Container(
-            foregroundDecoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  LightColors.white,
-                  LightColors.white.withOpacity(0.0),
-                ],
-                begin: Alignment.bottomCenter,
-                end: Alignment.center,
-                stops: const [0.14, 1],
-              ),
+    return Stack(
+      children: [
+        SvgPicture.asset(Assets.svgsDocLogo, width: 360.w, color: const Color(0xffF2F7FF),),
+        Container(
+          foregroundDecoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                LightColors.white,
+                LightColors.white.withOpacity(0.0),
+              ],
+              begin: Alignment.bottomCenter,
+              end: Alignment.center,
+              stops: const [0.14, 1],
             ),
-            child: Image.asset('assets/images/onboarding_doctor.png'),
           ),
-          Positioned(
-            bottom: 15,
-            left: 0,
-            right: 0,
-            child: Text(
-              'Best Doctor\nAppointment App',
-              style: TextStyles.blue32Bold.copyWith(
-                height: 1.5
-              ),
-              textAlign: TextAlign.center,
+          child: Image.asset('assets/images/onboarding_doctor.png'),
+        ),
+        Positioned(
+          bottom: 15,
+          left: 0,
+          right: 0,
+          child: Text(
+            'Best Doctor\nAppointment App',
+            style: TextStyles.blue32Bold.copyWith(
+              height: 1.5
             ),
-          )
-        ],
-      ),
+            textAlign: TextAlign.center,
+          ),
+        )
+      ],
     );
   }
 }
