@@ -20,14 +20,14 @@ class LoginBlocListener extends StatelessWidget {
         var cubit = context.read<LoginCubit>();
         state.whenOrNull(
           loading: () {
-            dialogBuilder(
-                context: context,
-                title: null,
-                canPop: false,
-                content: const Center(child: CircularProgressIndicator()));
+            // dialogBuilder(
+            //     context: context,
+            //     title: null,
+            //     canPop: false,
+            //     content: const Center(child: CircularProgressIndicator()));
           },
           success: (loginResponse) {
-            context.pop();
+            // context.pop();
             context.pushNamed(Routes.homeScreen);
           },
           error: (error) {

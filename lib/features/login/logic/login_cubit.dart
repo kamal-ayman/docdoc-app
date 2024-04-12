@@ -14,17 +14,13 @@ class LoginCubit extends Cubit<LoginState> {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
-  bool isLoading = false;
 
   Future<void> emitLoginStates(LoginRequestBody loginRequestBody) async {
-    isLoading = true;
     emit(const LoginState.loading());
     final ApiResult<LoginResponse> response = await _loginRepo.login(loginRequestBody);
     response.when(success: (loginResponse) {
-      isLoading = false;
       emit(LoginState.success(loginResponse));
     }, failure: (errorHandler) {
-      isLoading = false;
       emit(LoginState.error(error: errorHandler.apiErrorModel.message ?? ''));
     },);
   }
