@@ -51,7 +51,7 @@ class CustomMaterialButton extends StatelessWidget {
       child: MaterialButton(
         elevation: elevation,
         highlightElevation: elevation,
-        onPressed: onTap,
+        onPressed: isLoading ? (){} : onTap,
         materialTapTargetSize: materialTapTargetSize,
         shape: RoundedRectangleBorder(
           side: withBorderColor
@@ -68,7 +68,7 @@ class CustomMaterialButton extends StatelessWidget {
                     Text(text!,
                         style: textStyle ?? TextStyles.white16semiBold),
               ))
-            : const Center(child: CircularProgressIndicator()),
+            : const Center(child: CircularProgressIndicator(color: LightColors.white,)),
       ),
     );
   }

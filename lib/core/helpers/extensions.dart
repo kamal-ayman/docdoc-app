@@ -69,6 +69,13 @@ extension Validator on String {
   bool get isValidEmail {
     return RegExp(r'\S+@\S+\.\S+').hasMatch(this);
   }
+  
+  bool get isValidPassword {
+    if (length == 11) {
+      return RegExp(r'(010|011|012|015)[0-9]{8}').hasMatch(this);
+    }
+    return true;
+  }
 
   bool get isValidPhoneNumber {
     if (length == 11) {
@@ -78,4 +85,6 @@ extension Validator on String {
   }
 
   bool get isValidArName => RegExp(r'^[ا-ي]+\s[ا-ي]+\s[ا-ي]+').hasMatch(this);
+
+
 }
