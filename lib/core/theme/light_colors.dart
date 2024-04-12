@@ -5,7 +5,7 @@ class LightColors {
   static const Color gery = Color(0xff757575);
   static const Color lightGrey = Color(0xffEDEDED);
   static const Color red = Color(0xffFF4C5E);
-  static const Color red2 = Color(0xffff6273);
+  static const Color red2 = Color(0xffff9aa4);
   static const Color black = Color(0xff242424);
   static const Color light1Grey = Color(0xffC2C2C2);
   static const Color light2Grey = Color(0xffFDFDFF);

@@ -30,6 +30,11 @@ class TextStyles {
     fontWeight: FontWeightHelper.regular,
     color: LightColors.black,
   );
+  static TextStyle black13regular = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: LightColors.black,
+  );
   static TextStyle primary11regular = TextStyle(
     fontSize: 11.sp,
     fontWeight: FontWeightHelper.regular,
@@ -67,6 +72,11 @@ class TextStyles {
   );
   static TextStyle black14medium = TextStyle(
     fontSize: 14.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: LightColors.black,
+  );
+  static TextStyle black15medium = TextStyle(
+    fontSize: 15.sp,
     fontWeight: FontWeightHelper.medium,
     color: LightColors.black,
   );
