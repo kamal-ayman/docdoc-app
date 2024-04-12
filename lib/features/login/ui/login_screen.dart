@@ -3,7 +3,7 @@ import 'package:docdoc_app/core/theme/styles.dart';
 import 'package:docdoc_app/core/widgets/custom_material_button.dart';
 import 'package:docdoc_app/features/login/data/model/login_request_body.dart';
 import 'package:docdoc_app/features/login/logic/login_state.dart';
-import 'package:docdoc_app/features/login/ui/widgets/already_have_account_widget.dart';
+import 'package:docdoc_app/features/login/ui/widgets/do_not_have_account_widget.dart';
 import 'package:docdoc_app/features/login/ui/widgets/email_password_text_form_widget.dart';
 import 'package:docdoc_app/features/login/ui/widgets/login_bloc_listener_widget.dart';
 import 'package:docdoc_app/features/login/ui/widgets/terms_and_conditions_text.dart';
@@ -67,7 +67,7 @@ class LoginScreen extends StatelessWidget {
                       heightSpace(10),
                       const TermsAndConditionsText(),
                       heightSpace(10),
-                      const AlreadyHaveAccountWidget(),
+                      const DoNotHaveAccountWidget(),
                       const LoginBlocListener(),
                     ],
                   )

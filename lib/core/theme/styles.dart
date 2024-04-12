@@ -45,6 +45,11 @@ class TextStyles {
     fontWeight: FontWeightHelper.semiBold,
     color: LightColors.white,
   );
+  static TextStyle primary13semiBold = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.semiBold,
+    color: LightColors.primary,
+  );
   static TextStyle primary24bold = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeightHelper.bold,
