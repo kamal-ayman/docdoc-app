@@ -4,6 +4,11 @@ extension AddStringExt on String {
   int get toInt => int.parse(this);
 }
 
+// extension Spacing on int {
+//   SizedBox get verticalSpace => SizedBox(height: this.h);
+//   SizedBox get horizontalSpace => SizedBox(width: this.w);
+// }
+
 extension Context on BuildContext {
   void pop<T extends Object?>([T? result]) => Navigator.pop(this, result);
 
