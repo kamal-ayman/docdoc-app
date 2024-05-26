@@ -30,7 +30,7 @@ ThemeData darkTheme = ThemeData(
     backgroundColor: Color(0xff333739),
   ),
   textTheme: const TextTheme(
-    bodyText1: TextStyle(
+    bodyMedium: TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.w600,
       color: Colors.white,

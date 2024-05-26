@@ -7,7 +7,7 @@ import 'light_colors.dart';
 
 ThemeData lightTheme = ThemeData(
   colorScheme: ColorScheme.fromSeed(seedColor: LightColors.primary),
-  backgroundColor: LightColors.primary,
+  // backgroundColor: LightColors.primary,
   scaffoldBackgroundColor: LightColors.background,
   primarySwatch: Colors.orange,
   useMaterial3: true,
@@ -32,12 +32,12 @@ ThemeData lightTheme = ThemeData(
       elevation: 20.0,
   ),
   textTheme: const TextTheme(
-      bodyText1: TextStyle(
+      bodyMedium: TextStyle(
         fontSize: 18,
         fontWeight: FontWeight.w600,
         color: Colors.black,
       ),
-      headline5: TextStyle(
+      bodyLarge: TextStyle(
         fontSize: 40,
         fontWeight: FontWeight.bold,
         color: Colors.black,
