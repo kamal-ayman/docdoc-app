@@ -1,3 +1,5 @@
+import 'package:docdoc_app/core/network/api_result.dart';
+import 'package:docdoc_app/features/signup/data/model/signup_response.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -19,7 +21,7 @@ class SignupCubit extends Cubit<SignupState> {
 
   void emitSignupStates() async {
     emit(const SignupState.signupLoading());
-    final response = await _signupRepo.signup(
+    final ApiResult<SignupResponse> response = await _signupRepo.signup(
       SignupRequestBody(
         name: nameController.text,
         email: emailController.text,
